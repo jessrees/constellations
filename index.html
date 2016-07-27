@@ -10,21 +10,22 @@
 				background-color: #222;
 				margin: 0px;
 				overflow: hidden;
+				color:#fff;
 			}
 			a {
 				color: #f80;
 			}
 
 			#menu{
-				color:#fff;
+				
 			}
 
 		</style>
 	</head>
 
 	<body>
-		<div id="menu"><a id="all">All </a> </div>
-		<div id="camera"><a id="earth">Earth </a> <a id="cyngus">Cyngus </a> </div>
+		<div id="menu">Constellation: <a id="all">All </a> </div>
+		<div id="camera">Camera Angle: <a id="earth" style="color:#2badd9;">Earth </a> <a id="cyngus">Cyngus </a> </div>
 		<script src="build/three.js"></script>
 		<script src="build/constellationData.js"></script>
 		<script src="build/TrackballControls.js"></script>
@@ -87,6 +88,9 @@
 				// grid 
 				var helper = new THREE.GridHelper( 1000, 1000, 0x0000ff, 0x808080 );
 				// scene.add( helper );
+				
+				
+				
 
 
 				// Vega
